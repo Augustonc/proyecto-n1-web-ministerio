@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Protocolo Soporte Técnico N1</title>
+
+    <script>
+      const fileUpload = document.getElementById('file-upload');
+      const imageContainer = document.getElementById('image-container');
+
+      fileUpload.addEventListener('change', () => {
+        const file = fileUpload.files[0];
+        const reader = new FileReader();
+
+        reader.addEventListener('load', () => {
+          const image = new Image();
+          image.src = reader.result;
+          imageContainer.appendChild(image);
+  });
+
+  reader.readAsDataURL(file);
+});
+
+    </script>
+
+  </head>
+  <body>
+    <header>
+      <img src="logo.png" alt="Logo">
+      <h1>PROTOCOLO SOPORTE TÉCNICO N1</h1>
+      <h2>PROYECTO PATRULLEROS TECNOLÓGICOS</h2>
+      <h3>DIRECCIÓN DE INFORMÁTICA Y COMUNICACIONES</h3>
+    </header>
+    <main>
+      <p>En la Ciudad de Mendoza, a los 
+  <select name="dia">
+    <option value="">--Selecciona un día--</option>
+    <option value="01">01</option>
+    <option value="02">02</option>
+    <option value="03">03</option>
+    <option value="04">04</option>
+    <option value="05">05</option>
+    <option value="06">06</option>
+    <option value="07">07</option>
+    <option value="08">08</option>
+    <option value="09">09</option>
+    <option value="10">10</option>
+    <option value="11">11</option>
+    <option value="12">12</option>
+    <option value="13">13</option>
+    <option value="14">14</option>
+    <option value="15">15</option>
+    <option value="16">16</option>
+    <option value="17">17</option>
+    <option value="18">18</option>
+    <option value="19">19</option>
+    <option value="20">20</option>
+    <option value="21">21</option>
+    <option value="22">22</option>
+    <option value="23">23</option>
+    <option value="24">24</option>
+    <option value="25">25</option>
+    <option value="26">26</option>
+    <option value="27">27</option>
+    <option value="28">28</option>
+    <option value="29">29</option>
+    <option value="30">30</option>
+    <option value="31">31</option>
+  </select>
+  días del mes de 
+  <select name="mes">
+    <option value="">--Selecciona un mes--</option>
+    <option value="Enero">Enero</option>
+    <option value="Febrero">Febrero</option>
+    <option value="Marzo">Marzo</option>
+    <option value="Abril">Abril</option>
+    <option value="Mayo">Mayo</option>
+    <option value="Junio">Junio</option>
+    <option value="Julio">Julio</option>
+    <option value="Agosto">Agosto</option>
+    <option value="Septiembre">Septiembre</option>
+    <option value="Octubre">Octubre</option>
+    <option value="Noviembre">Noviembre</option>
+    <option value="Diciembre">Diciembre</option>
+  </select>
+  de 2023, se recibe MÓVIL 
+  <input type="number" name="movil" min="1000" max="9999" required>
+  a cargo de 
+  <input type="text" name="responsable" required>
+  en el centro de almacenamiento y descarga 
+  <select name="lugar">
+    <option value="">--Selecciona un lugar--</option>
+    <option value="Valle de UCO">VALLE DE UCO</option>
+    <option value="Las Heras">LAS HERAS</option>
+    <option value="Godoy Cruz">GODOY CRUZ</option>
+    <option value="ESTE">ESTE</option>
+    <option value="LUJÁN">LUJÁN</option>
+    <option value="CAPITAL">CAPITAL</option>
+    <option value="SANTA ROSA">SANTA ROSA</option>
+    <option value="SAN RAFAEL">SAN RAFAEL</option>
+    <option value="MALARGÜE">MALARGÜE</option>
+    <option value="GRAL. ALVEAR">GRAL. ALVEAR</option>
+    <option value="GUAYMALLÉN">GUAYMALLÉN</option>
+  </select>,
+  con el objeto de revisión Técnica a la solución Tecnológica de Sistema Video Vigilancia y Computadora abordo en el patrullero.</p>
+
+
+      <!-- Lista de equipamiento físico móvil -->
+      <table>
+        <thead>
+          <tr>
+            <th>EQUIPAMIENTO FÍSICO MÓVIL</th>
+            <th>ESTADO</th>
+            <th>OBSERVACIONES</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><p>Cámara interna 01</p></td>
+            <td><select name="estado">
+              <option>-</option>
+              <option>OK</option>
+              <option>NEG</option>
+            </select>
+            </td>
+            <td><input type="text" name="observaciones"></td>
+          </tr>
+
+          <tr>
+            <td><p>Cámara interna 02</p></td>
+            <td><select name="estado">
+              <option>-</option>
+              <option>OK</option>
+              <option>NEG</option>
+            </select>
+            </td>
+            <td><input type="text" name="observaciones"></td>
+          </tr>
+
+          <tr>
+            <td><p>Cámara interna 03</p></td>
+            <td><select name="estado">
+              <option>-</option>
+              <option>OK</option>
+              <option>NEG</option>
+            </select>
+            </td>
+            <td><input type="text" name="observaciones"></td>
+          </tr>
+
+          <tr>
+            <td><p>Tablet - WINPAD</p></td>
+            <td><select name="estado">
+              <option>-</option>
+              <option>OK</option>
+              <option>NEG</option>
+            </select>
+            </td>
+            <td><input type="text" name="observaciones"></td>
+          </tr>
+
+          <tr>
+            <td><p>Soporte de tableta y correa</p></td>
+            <td><select name="estado">
+              <option>-</option>
+              <option>OK</option>
+              <option>NEG</option>
+            </select>
+            </td>
+            <td><input type="text" name="observaciones"></td>
+          </tr>
+
+          <tr>
+            <td><p>Seguro de puertos USB 3.0</p></td>
+            <td><select name="estado">
+              <option>-</option>
+              <option>OK</option>
+              <option>NEG</option>
+            </select>
+            </td>
+            <td><input type="text" name="observaciones"></td>
+          </tr>
+
+          <tr>
+            <td><p>Seguro de bloqueo "Botón encedido"</p></td>
+            <td><select name="estado">
+              <option>-</option>
+              <option>OK</option>
+              <option>NEG</option>
+            </select>
+            </td>
+            <td><input type="text" name="observaciones"></td>
+          </tr>
+
+          <tr>
+            <td><p>Seguro Kensington</p></td>
+            <td><select name="estado">
+              <option>-</option>
+              <option>OK</option>
+              <option>NEG</option>
+            </select>
+            </td>
+            <td><input type="text" name="observaciones"></td>
+          </tr>
+
+          <tr>
+            <td><p>Caja intermedia con precinto</p></td>
+            <td><select name="estado">
+              <option>-</option>
+              <option>OK</option>
+              <option>NEG</option>
+            </select>
+            </td>
+            <td><input type="text" name="observaciones"></td>
+          </tr>
+
+          <tr>
+            <td><p>Disco duro externo y seguridad física activa</p></td>
+            <td><select name="estado">
+              <option>-</option>
+              <option>OK</option>
+              <option>NEG</option>
+            </select>
+            </td>
+            <td><input type="text" name="observaciones"></td>
+          </tr>
+
+          <tr>
+            <td><p>SmartBox (caja conexiones eléctricas)</p></td>
+            <td><select name="estado">
+              <option>-</option>
+              <option>OK</option>
+              <option>NEG</option>
+            </select>
+            </td>
+            <td><input type="text" name="observaciones"></td>
+          </tr>
+
+          <tr>
+            <td><p>Revision de estado del DC converter</p></td>
+            <td><select name="estado">
+              <option>-</option>
+              <option>OK</option>
+              <option>NEG</option>
+            </select>
+            </td>
+            <td><input type="text" name="observaciones"></td>
+          </tr>
+
+          <tr>
+            <td><p>Estado del vehiculo (choque en baul con equipos, testigo encendido en
+tablero, chapa metalica floja, etc.)</p></td>
+            <td><select name="estado">
+              <option>-</option>
+              <option>OK</option>
+              <option>NEG</option>
+            </select>
+            </td>
+            <td><input type="text" name="observaciones"></td>
+          </tr>
+        </tbody>
+      </table>
+
+     <!-- Lista de encendido de sistema -->
+      <table>
+        <thead>
+          <tr>
+            <th>ENCENDIDO SISTEMA</th>
+            <th>ESTADO</th>
+            <th>OBSERVACIONES</th>
+          </tr>
+        </thead>
+        <tbody>
+
+          <tr>
+            <td><p>Estado batería del móvil (bornes + -)</p></td>
+            <td><select name="estado">
+              <option>-</option>
+              <option>OK</option>
+              <option>NEG</option>
+            </select>
+            </td>
+            <td><input type="text" name="observaciones"></td>
+          </tr>
+
+          <tr>
+            <td><p>Medición voltaje batería móvil apagado (>11.5 V).</p></td>
+            <td><select name="estado">
+              <option>-</option>
+              <option>OK</option>
+              <option>NEG</option>
+            </select>
+            </td>
+            <td><input type="text" name="observaciones"></td>
+          </tr>
+
+          <tr>
+            <td><p>Medición voltaje batería móvil encendido (no mayor a 14 v.)</p></td>
+            <td><select name="estado">
+              <option>-</option>
+              <option>OK</option>
+              <option>NEG</option>
+            </select>
+            </td>
+            <td><input type="text" name="observaciones"></td>
+          </tr>
+
+          <tr>
+            <td><p>Revisión porta fusible borne (+) de la bateria, ajustado para buen contacto
+eléctrico</p></td>
+            <td><select name="estado">
+              <option>-</option>
+              <option>OK</option>
+              <option>NEG</option>
+            </select>
+            </td>
+            <td><input type="text" name="observaciones"></td>
+          </tr>
+
+          <tr>
+            <td><p>Revisión cable negativo (-) con ajuste con torque adecuado.</p></td>
+            <td><select name="estado">
+              <option>-</option>
+              <option>OK</option>
+              <option>NEG</option>
+            </select>
+            </td>
+            <td><input type="text" name="observaciones"></td>
+          </tr>
+
+          <tr>
+            <td><p>Validar encedido correcto Smartbox (led modo parpadeo en color rojo a
+color azul constante)</p></td>
+            <td><select name="estado">
+              <option>-</option>
+              <option>OK</option>
+              <option>NEG</option>
+            </select>
+            </td>
+            <td><input type="text" name="observaciones"></td>
+          </tr>
+
+          <tr>
+            <td><p>Encendido Tablet adecuado (color verde)</p></td>
+            <td><select name="estado">
+              <option>-</option>
+              <option>OK</option>
+              <option>NEG</option>
+            </select>
+            </td>
+            <td><input type="text" name="observaciones"></td>
+          </tr>
+
+        </tbody>
+      </table>
+
+      <!-- Lista funcionalidad y operatividad del sistema -->
+      <table>
+        <thead>
+          <tr>
+            <th>FUNCIONALIDAD Y OPERATIVIDAD SISTEMA</th>
+            <th>ESTADO</th>
+            <th>OBSERVACIONES</th>
+          </tr>
+        </thead>
+        <tbody>
+          
+          <tr>
+            <td><p>Validar estado batería Tablet (presencia luz verde)</p></td>
+            <td><select name="estado">
+              <option>-</option>
+              <option>OK</option>
+              <option>NEG</option>
+            </select>
+            </td>
+            <td><input type="text" name="observaciones"></td>
+          </tr>
+
+          <tr>
+            <td><p>Encendido sistema videovigilancia (<= 2.5 min)</p></td>
+            <td><select name="estado">
+              <option>-</option>
+              <option>OK</option>
+              <option>NEG</option>
+            </select>
+            </td>
+            <td><input type="text" name="observaciones"></td>
+          </tr>
+
+          <tr>
+            <td><p>Operatividad Tablet (función táctil)</p></td>
+            <td><select name="estado">
+              <option>-</option>
+              <option>OK</option>
+              <option>NEG</option>
+            </select>
+            </td>
+            <td><input type="text" name="observaciones"></td>
+          </tr>
+
+          <tr>
+            <td><p>Funcionalidad SIVCOP (indicadores color azul, a excepción de conectividad
+y GPS)</p></td>
+            <td><select name="estado">
+              <option>-</option>
+              <option>OK</option>
+              <option>NEG</option>
+            </select>
+            </td>
+            <td><input type="text" name="observaciones"></td>
+          </tr>
+
+          <tr>
+            <td><p>Operatividad de SIVCOP en tablet (muestro mapa, mapa TPK)</p></td>
+            <td><select name="estado">
+              <option>-</option>
+              <option>OK</option>
+              <option>NEG</option>
+            </select>
+            </td>
+            <td><input type="text" name="observaciones"></td>
+          </tr>
+
+          <tr>
+            <td><p>Arranque Consultas Policiales - Patrulleros Tecnológicos</p></td>
+            <td><select name="estado">
+              <option>-</option>
+              <option>OK</option>
+              <option>NEG</option>
+            </select>
+            </td>
+            <td><input type="text" name="observaciones"></td>
+          </tr>
+
+          <tr>
+            <td><p>Funcionalidad disco externo (presencia luz verde)</p></td>
+            <td><select name="estado">
+              <option>-</option>
+              <option>OK</option>
+              <option>NEG</option>
+            </select>
+            </td>
+            <td><input type="text" name="observaciones"></td>
+          </tr>
+
+          <tr>
+            <td><p>Operatividad de camaras</p></td>
+            <td><select name="estado">
+              <option>-</option>
+              <option>OK</option>
+              <option>NEG</option>
+            </select>
+            </td>
+            <td><input type="text" name="observaciones"></td>
+          </tr>
+
+          <tr>
+            <td><p>Operatividad de disco duro externo (toma o no toma disco)</p></td>
+            <td><select name="estado">
+              <option>-</option>
+              <option>OK</option>
+              <option>NEG</option>
+            </select>
+            </td>
+            <td><input type="text" name="observaciones"></td>
+          </tr>
+
+          <tr>
+            <td><p>Validar apagado del móvil (sistema OFF, <= 2.5 minutos)</p></td>
+            <td><select name="estado">
+              <option>-</option>
+              <option>OK</option>
+              <option>NEG</option>
+            </select>
+            </td>
+            <td><input type="text" name="observaciones"></td>
+          </tr>
+
+        </tbody>
+      </table>
+
+      <!-- Lista operatividad AVL -->
+      <table>
+        <thead>
+          <tr>
+            <th>OPERATIVIDAD AVL</th>
+            <th>ESTADO</th>
+            <th>OBSERVACIONES</th>
+          </tr>
+        </thead>
+        <tbody>
+
+          <tr>
+            <td><p>Disponibilidad de AVL en Sitio Almacenamiento y Descarga</p></td>
+            <td><select name="estado">
+              <option>-</option>
+              <option>OK</option>
+              <option>NEG</option>
+            </select>
+            </td>
+            <td><input type="text" name="observaciones"></td>
+          </tr>
+
+          <tr>
+            <td><p>Revisar indicadores de gestión</p></td>
+            <td><select name="estado">
+              <option>-</option>
+              <option>OK</option>
+              <option>NEG</option>
+            </select>
+            </td>
+            <td><input type="text" name="observaciones"></td>
+          </tr>
+
+          <tr>
+            <td><p>Control de indicadores del móvil (batería porcentaje, GPS, espacio disco y
+cámaras)</p></td>
+            <td><select name="estado">
+              <option>-</option>
+              <option>OK</option>
+              <option>NEG</option>
+            </select>
+            </td>
+            <td><input type="text" name="observaciones"></td>
+          </tr>
+
+        </tbody>
+      </table>
+
+      <!-- Observaciones generales -->
+      <table>
+        <thead>
+          <tr>
+            <th>OBSERVACIONES GENERALES</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><input type="text" name="observaciones"></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <form>
+        <label for="file-upload">Seleccione una imagen:</label>
+        <input type="file" id="file-upload" accept="image/*">
+      </form>
+
+      <div id="image-container"></div>
+
+    </main>
+  </body>
